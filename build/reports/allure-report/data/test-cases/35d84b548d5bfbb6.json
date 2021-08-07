@@ -1,12 +1,12 @@
 {
-  "uid" : "94b545f8e2986290",
+  "uid" : "35d84b548d5bfbb6",
   "name" : "successfulRegistration()",
   "fullName" : "TC01_SuccessfulRegistration.successfulRegistration",
   "historyId" : "c38a9c04fc613b3ee5a8c12dbccbe07a",
   "time" : {
-    "start" : 1628329736156,
-    "stop" : 1628329737578,
-    "duration" : 1422
+    "start" : 1628346482090,
+    "stop" : 1628346485975,
+    "duration" : 3885
   },
   "description" : "",
   "status" : "passed",
@@ -17,17 +17,29 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "ed1e3c1fc8a361c9",
+      "uid" : "311fdec5d2b6729e",
       "name" : "Screenshot",
-      "source" : "ed1e3c1fc8a361c9.png",
+      "source" : "311fdec5d2b6729e.png",
       "type" : "image/png",
-      "size" : 316515
+      "size" : 314431
+    }, {
+      "uid" : "fd1941ba6af29432",
+      "name" : "Screenshot",
+      "source" : "fd1941ba6af29432.png",
+      "type" : "image/png",
+      "size" : 87970
+    }, {
+      "uid" : "19278d9d5ea4fa40",
+      "name" : "Screenshot",
+      "source" : "19278d9d5ea4fa40.png",
+      "type" : "image/png",
+      "size" : 75691
     } ],
     "parameters" : [ ],
-    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -35,7 +47,7 @@
     "value" : "MAIN-MACHINE"
   }, {
     "name" : "thread",
-    "value" : "30404@MAIN-MACHINE.Test worker(11)"
+    "value" : "59852@MAIN-MACHINE.Test worker(11)"
   }, {
     "name" : "package",
     "value" : "TC01_SuccessfulRegistration"
@@ -54,30 +66,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "bb42d1a0b527c71e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1628329565337,
-        "stop" : 1628329566448,
-        "duration" : 1111
-      }
-    }, {
-      "uid" : "c438b6c6dd849030",
-      "status" : "passed",
-      "time" : {
-        "start" : 1628329297688,
-        "stop" : 1628329298762,
-        "duration" : 1074
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "94b545f8e2986290.json",
+  "source" : "35d84b548d5bfbb6.json",
   "parameterValues" : [ ]
 }

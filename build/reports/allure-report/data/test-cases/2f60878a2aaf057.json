@@ -1,0 +1,48 @@
+{
+  "uid" : "2f60878a2aaf057",
+  "name" : "successfulRegistration()",
+  "fullName" : "TC01_SuccessfulRegistration.successfulRegistration",
+  "historyId" : "c38a9c04fc613b3ee5a8c12dbccbe07a",
+  "time" : {
+    "start" : 1628329297688,
+    "stop" : 1628329298762,
+    "duration" : 1074
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "MAIN-MACHINE"
+  }, {
+    "name" : "thread",
+    "value" : "28096@MAIN-MACHINE.Test worker(11)"
+  }, {
+    "name" : "package",
+    "value" : "TC01_SuccessfulRegistration"
+  }, {
+    "name" : "testClass",
+    "value" : "TC01_SuccessfulRegistration"
+  }, {
+    "name" : "testMethod",
+    "value" : "successfulRegistration"
+  }, {
+    "name" : "suite",
+    "value" : "TC01_SuccessfulRegistration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2f60878a2aaf057.json",
+  "parameterValues" : [ ]
+}

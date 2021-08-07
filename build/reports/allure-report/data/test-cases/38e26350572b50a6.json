@@ -1,12 +1,12 @@
 {
-  "uid" : "c438b6c6dd849030",
+  "uid" : "38e26350572b50a6",
   "name" : "successfulRegistration()",
   "fullName" : "TC01_SuccessfulRegistration.successfulRegistration",
   "historyId" : "c38a9c04fc613b3ee5a8c12dbccbe07a",
   "time" : {
-    "start" : 1628329297688,
-    "stop" : 1628329298762,
-    "duration" : 1074
+    "start" : 1628329565337,
+    "stop" : 1628329566448,
+    "duration" : 1111
   },
   "description" : "",
   "status" : "passed",
@@ -18,7 +18,7 @@
     "value" : "MAIN-MACHINE"
   }, {
     "name" : "thread",
-    "value" : "28096@MAIN-MACHINE.Test worker(11)"
+    "value" : "27052@MAIN-MACHINE.Test worker(11)"
   }, {
     "name" : "package",
     "value" : "TC01_SuccessfulRegistration"
@@ -43,6 +43,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c438b6c6dd849030.json",
+  "source" : "38e26350572b50a6.json",
   "parameterValues" : [ ]
 }

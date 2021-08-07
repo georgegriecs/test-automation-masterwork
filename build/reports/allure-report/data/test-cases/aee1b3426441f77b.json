@@ -1,0 +1,65 @@
+{
+  "uid" : "aee1b3426441f77b",
+  "name" : "successfulRegistration()",
+  "fullName" : "TC01_SuccessfulRegistration.successfulRegistration",
+  "historyId" : "c38a9c04fc613b3ee5a8c12dbccbe07a",
+  "time" : {
+    "start" : 1628329736156,
+    "stop" : 1628329737578,
+    "duration" : 1422
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1aa10359ed84f5b3",
+      "name" : "Screenshot",
+      "source" : "1aa10359ed84f5b3.png",
+      "type" : "image/png",
+      "size" : 316515
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "MAIN-MACHINE"
+  }, {
+    "name" : "thread",
+    "value" : "30404@MAIN-MACHINE.Test worker(11)"
+  }, {
+    "name" : "package",
+    "value" : "TC01_SuccessfulRegistration"
+  }, {
+    "name" : "testClass",
+    "value" : "TC01_SuccessfulRegistration"
+  }, {
+    "name" : "testMethod",
+    "value" : "successfulRegistration"
+  }, {
+    "name" : "suite",
+    "value" : "TC01_SuccessfulRegistration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aee1b3426441f77b.json",
+  "parameterValues" : [ ]
+}

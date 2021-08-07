@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "MAIN-MACHINE",
     "children" : [ {
-      "name" : "30404@MAIN-MACHINE.Test worker(11)",
+      "name" : "21296@MAIN-MACHINE.Test worker(11)",
       "children" : [ {
         "name" : "successfulRegistration()",
-        "uid" : "94b545f8e2986290",
-        "parentUid" : "9191c501ce0f347efcdb78d9e26efa09",
+        "uid" : "fc05a5588f3c21a6",
+        "parentUid" : "9e9b546bf95ef3e035cb2d4f7ee58bcf",
         "status" : "passed",
         "time" : {
-          "start" : 1628329736156,
-          "stop" : 1628329737578,
-          "duration" : 1422
+          "start" : 1628346551157,
+          "stop" : 1628346555218,
+          "duration" : 4061
         },
-        "flaky" : false,
+        "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "9191c501ce0f347efcdb78d9e26efa09"
+      "uid" : "9e9b546bf95ef3e035cb2d4f7ee58bcf"
     } ],
     "uid" : "a31b0828947e0caac364a171214eeeba"
   } ]

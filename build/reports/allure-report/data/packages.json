@@ -5,15 +5,15 @@
     "name" : "TC01_SuccessfulRegistration",
     "children" : [ {
       "name" : "successfulRegistration",
-      "uid" : "94b545f8e2986290",
+      "uid" : "fc05a5588f3c21a6",
       "parentUid" : "620ea4b48db1adf02fcfd8ad6be46117",
       "status" : "passed",
       "time" : {
-        "start" : 1628329736156,
-        "stop" : 1628329737578,
-        "duration" : 1422
+        "start" : 1628346551157,
+        "stop" : 1628346555218,
+        "duration" : 4061
       },
-      "flaky" : false,
+      "flaky" : true,
       "parameters" : [ ]
     } ],
     "uid" : "620ea4b48db1adf02fcfd8ad6be46117"
