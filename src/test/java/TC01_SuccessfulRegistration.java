@@ -7,15 +7,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.AccountLoginPage;
 import pages.HomePage;
 import pages.RegisterAccountPage;
+
+import java.io.File;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Epic("User administration processes in YourStore web app")
 @Feature("User registration")
 @Story("Successful registration")
 public class TC01_SuccessfulRegistration  extends BaseTest {
-  private HomePage homepage;
-  private AccountLoginPage accountLoginPage;
-  private RegisterAccountPage registerAccountPage;
+  private HomePage homepage = null;
+  private AccountLoginPage accountLoginPage = null;
+  private RegisterAccountPage registerAccountPage = null;
   private final String SUCCESSFUL_REGISTRATION_MESSAGE = "Your Account Has Been Created!";
 
   @Test
@@ -45,4 +48,5 @@ public class TC01_SuccessfulRegistration  extends BaseTest {
   public String generateEmail() {
     return "test_" + ((int)( Math.random() * 100000000 )) + "@test.hu";
   }
+
 }

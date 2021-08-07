@@ -2,16 +2,44 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "successfulRegistration()",
-    "uid" : "fc05a5588f3c21a6",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1628346551157,
-      "stop" : 1628346555218,
-      "duration" : 4061
-    },
-    "flaky" : true,
-    "parameters" : [ ]
+    "name" : "User administration processes in YourStore web app",
+    "children" : [ {
+      "name" : "User registration",
+      "children" : [ {
+        "name" : "Successful registration",
+        "children" : [ {
+          "name" : "successfulRegistration()",
+          "uid" : "3b58a070e514f9e3",
+          "parentUid" : "9a65d5b929e08ffc32ab3ca22a440be4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1628352619306,
+            "stop" : 1628352623551,
+            "duration" : 4245
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9a65d5b929e08ffc32ab3ca22a440be4"
+      }, {
+        "name" : "Unsuccessful registration",
+        "children" : [ {
+          "name" : "successfulRegistration()",
+          "uid" : "ea3491a2d109ee1a",
+          "parentUid" : "f1dbd56956ece1346e62cb942889c4e4",
+          "status" : "failed",
+          "time" : {
+            "start" : 1628352652017,
+            "stop" : 1628352656361,
+            "duration" : 4344
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f1dbd56956ece1346e62cb942889c4e4"
+      } ],
+      "uid" : "2ed7c7f679f0331a16c03ad3dff7b390"
+    } ],
+    "uid" : "46a1acb9d57e3496272516635d599689"
   } ]
 }

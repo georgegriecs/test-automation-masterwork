@@ -1,14 +1,16 @@
 pages/BasePage.java
  pages.BasePage
-pages/AccountLoginPage.java
- pages.AccountLoginPage
-pages/HomePage.java
- pages.HomePage
 BaseTest.java
  BaseTest
+pages/HomePage.java
+ pages.HomePage
+pages/AccountLoginPage.java
+ pages.AccountLoginPage
 pages/LoginPage.java
  pages.LoginPage
-pages/RegisterAccountPage.java
- pages.RegisterAccountPage
 TC01_SuccessfulRegistration.java
  TC01_SuccessfulRegistration
+pages/RegisterAccountPage.java
+ pages.RegisterAccountPage
+TC02_UnsuccessfulRegistration.java
+ TC02_UnsuccessfulRegistration

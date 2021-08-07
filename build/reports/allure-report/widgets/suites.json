@@ -1,6 +1,17 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "cb918d5d3e3187ba5c9049cf39098fdc",
+    "name" : "TC02_UnsuccessfulRegistration",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "bb0ad08dac9f895cb19bde013aa22e7c",
     "name" : "TC01_SuccessfulRegistration",
     "statistic" : {

@@ -39,6 +39,9 @@ public class RegisterAccountPage extends BasePage{
   @FindBy( xpath = "//*[@id=\"content\"]/form/div/div/input[2]")
   WebElement countinueButton;
 
+  @FindBy ( xpath = "//*[@id=\"account-register\"]/div[1]")
+  WebElement WarningMessageEmailIsAlreadyIsRegistered;
+
   public RegisterAccountPage(WebDriver driver) {
     super(driver, RegisterAccountPage.class);
   }
@@ -64,7 +67,9 @@ public class RegisterAccountPage extends BasePage{
     LOG.info("Click to continue button");
   }
 
-
+    public WebElement getWarningMessageWebElement() {
+      return WarningMessageEmailIsAlreadyIsRegistered;
+    }
 }
 
 

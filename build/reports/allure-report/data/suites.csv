@@ -1,2 +1,3 @@
 "Status","Name","Duration in ms","Description"
-"passed","TC01_SuccessfulRegistration.successfulRegistration","4061",""
+"failed","TC02_UnsuccessfulRegistration.successfulRegistration","4344",""
+"passed","TC01_SuccessfulRegistration.successfulRegistration","4245",""

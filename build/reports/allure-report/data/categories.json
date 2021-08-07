@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "\r\nexpected: \"Warning: E-Mail Address is already registered!\"\r\n but was: \"Register Account\"",
+      "children" : [ {
+        "name" : "successfulRegistration()",
+        "uid" : "ea3491a2d109ee1a",
+        "parentUid" : "3e0219e6f477eec058ee2eb202c69400",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628352652017,
+          "stop" : 1628352656361,
+          "duration" : 4344
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e0219e6f477eec058ee2eb202c69400"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

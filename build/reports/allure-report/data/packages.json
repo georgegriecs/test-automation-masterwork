@@ -5,17 +5,33 @@
     "name" : "TC01_SuccessfulRegistration",
     "children" : [ {
       "name" : "successfulRegistration",
-      "uid" : "fc05a5588f3c21a6",
+      "uid" : "3b58a070e514f9e3",
       "parentUid" : "620ea4b48db1adf02fcfd8ad6be46117",
       "status" : "passed",
       "time" : {
-        "start" : 1628346551157,
-        "stop" : 1628346555218,
-        "duration" : 4061
+        "start" : 1628352619306,
+        "stop" : 1628352623551,
+        "duration" : 4245
       },
-      "flaky" : true,
+      "flaky" : false,
       "parameters" : [ ]
     } ],
     "uid" : "620ea4b48db1adf02fcfd8ad6be46117"
+  }, {
+    "name" : "TC02_UnsuccessfulRegistration",
+    "children" : [ {
+      "name" : "successfulRegistration",
+      "uid" : "ea3491a2d109ee1a",
+      "parentUid" : "04907381a421a8ac975096d80fd1d464",
+      "status" : "failed",
+      "time" : {
+        "start" : 1628352652017,
+        "stop" : 1628352656361,
+        "duration" : 4344
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "04907381a421a8ac975096d80fd1d464"
   } ]
 }
