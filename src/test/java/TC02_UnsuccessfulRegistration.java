@@ -16,7 +16,6 @@ public class TC02_UnsuccessfulRegistration  extends BaseTest {
   private HomePage homepage = null;
   private AccountLoginPage accountLoginPage = null;
   private RegisterAccountPage registerAccountPage = null;
-  private final String UNSUCCESSFUL_REGISTRATION_MESSAGE = "Warning: E-Mail Address is already registered!";
 
   @Test
   public void successfulRegistration() throws InterruptedException {

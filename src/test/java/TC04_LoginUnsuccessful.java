@@ -10,8 +10,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Epic("Customer administration processes in YourStore web app")
 @Feature("Customer Login")
-@Story("Successful login")
-public class TC03_LoginSucessful extends BaseTest {
+@Story("Unsuccessful login")
+public class TC04_LoginUnsuccessful extends BaseTest {
   private HomePage homepage = null;
   private AccountLoginPage accountLoginPage = null;
   private RegisterAccountPage registerAccountPage = null;
@@ -30,10 +30,10 @@ public class TC03_LoginSucessful extends BaseTest {
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");
-    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD);
+    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD + "_");
     makeScreenshot();
     LOG.info("Take a screenshot");
-    assertThat( driver.getTitle()).isEqualTo("My Account");
+    assertThat( accountLoginPage.getWarningMessageNoMatchEmailOrPassword().getText()).isEqualTo(WARNING_MESSAGE_NO_MATCH_EMAIL_PASSWORD);
   }
 
 }

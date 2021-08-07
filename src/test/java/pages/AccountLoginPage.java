@@ -22,7 +22,7 @@ public class AccountLoginPage  extends BasePage {
   @FindBy( xpath = "//input[@type=\"submit\"]" )
   WebElement loginButton;
 
-  @FindBy( xpath = "//input[@type=\"submit\"]"  )
+  @FindBy( xpath = "//*[@id=\"account-login\"]/div[1]"  )
   WebElement warningMessageNoMatch;
 
   public AccountLoginPage(WebDriver driver ) {
@@ -45,5 +45,9 @@ public class AccountLoginPage  extends BasePage {
     LOG.info("password: " + password);
     makeScreenshot();
     loginButton.click();
+  }
+
+  public WebElement getWarningMessageNoMatchEmailOrPassword() {
+    return warningMessageNoMatch;
   }
 }
