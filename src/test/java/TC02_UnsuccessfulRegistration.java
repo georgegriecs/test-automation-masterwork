@@ -9,15 +9,14 @@ import pages.HomePage;
 import pages.RegisterAccountPage;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("User administration processes in YourStore web app")
-@Feature("User registration")
+@Epic("Customer administration processes in YourStore web app")
+@Feature("Customer registration")
 @Story("Unsuccessful registration")
 public class TC02_UnsuccessfulRegistration  extends BaseTest {
   private HomePage homepage = null;
   private AccountLoginPage accountLoginPage = null;
   private RegisterAccountPage registerAccountPage = null;
   private final String UNSUCCESSFUL_REGISTRATION_MESSAGE = "Warning: E-Mail Address is already registered!";
-  private final String REGISTRATED_EMAIL = "test_35306163@test.hu";
 
   @Test
   public void successfulRegistration() throws InterruptedException {
@@ -36,7 +35,7 @@ public class TC02_UnsuccessfulRegistration  extends BaseTest {
     LOG.info("Click to New Customer Continue button");
     makeScreenshot();
     LOG.info("Take a screenshot");
-    registerAccountPage.registerNewCustomer("test_fname", "test_lname", REGISTRATED_EMAIL, "+361234566", "test_psw");
+    registerAccountPage.registerNewCustomer("test_fname", "test_lname", REGISTRATED_EMAIL, "+361234566", REGISTRATED_PASSWORD);
     makeScreenshot();
     LOG.info("Take a screenshot");
     assertThat(registerAccountPage.getWarningMessageWebElement().getText()).isEqualTo(UNSUCCESSFUL_REGISTRATION_MESSAGE);

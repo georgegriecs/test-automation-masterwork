@@ -22,15 +22,12 @@ public class BaseTest {
   protected static JavascriptExecutor js = null;
   protected final Logger LOG = LoggerFactory.getLogger( BaseTest.class);
   private static Properties props = new Properties();
-
+  protected final String REGISTRATED_EMAIL = "test_35306163@test.hu";
+  protected final String REGISTRATED_PASSWORD = "test_psw";
 
   @BeforeAll
   public static void setup() throws IOException {
-    /*
-    Properties properties = new Properties();
-    InputStream propertiesResourceAsStream = BaseTest.class.getResourceAsStream( "/browser.properties");
-    properties.load(propertiesResourceAsStream);
-*/
+
     WebDriverManager.chromedriver().setup();
 
     ChromeOptions chromeOptions = new ChromeOptions();
