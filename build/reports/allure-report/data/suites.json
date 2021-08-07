@@ -1,0 +1,21 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TC01_SuccessfulRegistration",
+    "children" : [ {
+      "name" : "successfulRegistration()",
+      "uid" : "94b545f8e2986290",
+      "parentUid" : "bb0ad08dac9f895cb19bde013aa22e7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628329736156,
+        "stop" : 1628329737578,
+        "duration" : 1422
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bb0ad08dac9f895cb19bde013aa22e7c"
+  } ]
+}

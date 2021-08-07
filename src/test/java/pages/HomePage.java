@@ -6,18 +6,20 @@ import static org.assertj.core.api.Assertions.*;
 
 public class HomePage extends BasePage {
 
-  public static final baseUrl = "http://test-automation-shop2.greenfox.academy/";
+  final String baseUrl = "http://test-automation-shop2.greenfox.academy/";
 
   public HomePage(WebDriver driver) {
-    super(driver, LoginPage.class);
+    super(driver, HomePage.class);
   }
 
-  public void openHomePage() {
-    driver.get("http://test-automation-shop2.greenfox.academy/");
+  public void open() {
+    driver.get(baseUrl);
     LOG.info("Open homepage!");
     assertThat(driver.getTitle()).isEqualTo("Your Store");
     LOG.info("Your Store downloaded !");
   }
+
+
 
 
 }

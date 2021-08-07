@@ -1,0 +1,11 @@
+[ {
+  "uid" : "94b545f8e2986290",
+  "name" : "successfulRegistration()",
+  "time" : {
+    "start" : 1628329736156,
+    "stop" : 1628329737578,
+    "duration" : 1422
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

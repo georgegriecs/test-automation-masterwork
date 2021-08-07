@@ -1,0 +1,10 @@
+pages/BasePage.java
+ pages.BasePage
+pages/LoginPage.java
+ pages.LoginPage
+pages/HomePage.java
+ pages.HomePage
+TC01_SuccessfulRegistration.java
+ TC01_SuccessfulRegistration
+BaseTest.java
+ BaseTest
