@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TC05_PrivacyStatementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-07T21:33:11" hostname="MAIN-MACHINE" time="4.342">
+  <properties/>
+  <testcase name="privacyStatementTest()" classname="TC05_PrivacyStatementTest" time="4.342"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\georg\.cache\selenium\chromedriver\win32\92.0.4515.107\chromedriver.exe
+Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 36873
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+aug. 07, 2021 11:33:11 DU org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO pages.HomePage - Open homepage!
+[Test worker] INFO pages.HomePage - Your Store downloaded !
+[Test worker] INFO BaseTest - Taken a screenshot
+[Test worker] INFO BaseTest - Load account login page
+[Test worker] INFO BaseTest - Take a screenshot
+[Test worker] INFO BaseTest - Click to New Customer Continue button
+[Test worker] INFO BaseTest - Taken a screenshot
+[Test worker] INFO pages.RegisterAccountPage - Privacy policy model window opened
+[Test worker] INFO BaseTest - Taken a screenshot
+[Test worker] INFO BaseTest - Taken a screenshot
+[Test worker] INFO pages.RegisterAccountPage - Click To Privacy Policy Checkbox
+[Test worker] INFO BaseTest - Taken a screenshot
+[Test worker] INFO pages.RegisterAccountPage - Privacy Policy CheckBox: true
+]]></system-err>
+</testsuite>

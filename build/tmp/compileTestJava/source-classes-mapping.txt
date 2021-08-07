@@ -1,20 +1,22 @@
+pages/AccountLoginPage.java
+ pages.AccountLoginPage
+pages/LoginPage.java
+ pages.LoginPage
+pages/BasePage.java
+ pages.BasePage
+BaseTest.java
+ BaseTest
+pages/HomePage.java
+ pages.HomePage
 TC03_LoginSuccessful.java
  TC03_LoginSuccessful
 TC04_LoginUnsuccessful.java
  TC04_LoginUnsuccessful
-pages/BasePage.java
- pages.BasePage
 TC01_SuccessfulRegistration.java
  TC01_SuccessfulRegistration
-pages/HomePage.java
- pages.HomePage
 TC02_UnsuccessfulRegistration.java
  TC02_UnsuccessfulRegistration
 pages/RegisterAccountPage.java
  pages.RegisterAccountPage
-pages/LoginPage.java
- pages.LoginPage
-BaseTest.java
- BaseTest
-pages/AccountLoginPage.java
- pages.AccountLoginPage
+TC05_PrivacyStatementTest.java
+ TC05_PrivacyStatementTest

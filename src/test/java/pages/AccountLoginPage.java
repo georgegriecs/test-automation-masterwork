@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import sun.rmi.runtime.Log;
 
 public class AccountLoginPage  extends BasePage {
@@ -10,7 +12,7 @@ public class AccountLoginPage  extends BasePage {
   @FindBy( xpath = "//a[text()=\"Continue\"]"  )
   WebElement newCustomerButton;
 
-  @FindBy( xpath = "//*[@id=\"content\"]/div/div[2]/div/form/input"  )
+  @FindBy( xpath = "//*[@id=\"content\"]/div/div[2]/div/form/input" )
   WebElement returnCustomerLoginButton;
 
   @FindBy( id = "input-email"  )

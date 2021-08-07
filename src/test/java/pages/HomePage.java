@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
     return isLoaded(myAccountFromFooter);
   }
 
-  public void openAccountLoginPage() {
+  public void clickToMyAccountLink() {
     myAccountFromFooter.click();
   }
 }

@@ -17,7 +17,7 @@ public class TC03_LoginSuccessful extends BaseTest {
   private RegisterAccountPage registerAccountPage = null;
 
   @Test
-  public void loginSuccessful() throws InterruptedException {
+  public void loginSuccessful() {
 
     homepage = new HomePage(driver);
     accountLoginPage = new AccountLoginPage(driver);
@@ -26,7 +26,7 @@ public class TC03_LoginSuccessful extends BaseTest {
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.openAccountLoginPage();
+    homepage.clickToMyAccountLink();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");

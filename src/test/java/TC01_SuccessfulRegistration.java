@@ -19,7 +19,7 @@ public class TC01_SuccessfulRegistration  extends BaseTest {
   private final String SUCCESSFUL_REGISTRATION_MESSAGE = "Your Account Has Been Created!";
 
   @Test
-  public void successfulRegistration() throws InterruptedException {
+  public void successfulRegistration() {
     homepage = new HomePage(driver);
     accountLoginPage = new AccountLoginPage(driver);
     registerAccountPage = new RegisterAccountPage(driver);
@@ -27,7 +27,7 @@ public class TC01_SuccessfulRegistration  extends BaseTest {
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.openAccountLoginPage();
+    homepage.clickToMyAccountLink();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");

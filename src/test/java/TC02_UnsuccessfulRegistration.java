@@ -18,7 +18,7 @@ public class TC02_UnsuccessfulRegistration  extends BaseTest {
   private RegisterAccountPage registerAccountPage = null;
 
   @Test
-  public void successfulRegistration() throws InterruptedException {
+  public void successfulRegistration() {
     homepage = new HomePage(driver);
     accountLoginPage = new AccountLoginPage(driver);
     registerAccountPage = new RegisterAccountPage(driver);
@@ -26,7 +26,7 @@ public class TC02_UnsuccessfulRegistration  extends BaseTest {
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.openAccountLoginPage();
+    homepage.clickToMyAccountLink();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");
@@ -37,7 +37,7 @@ public class TC02_UnsuccessfulRegistration  extends BaseTest {
     registerAccountPage.registerNewCustomer("test_fname", "test_lname", REGISTRATED_EMAIL, "+361234566", REGISTRATED_PASSWORD);
     makeScreenshot();
     LOG.info("Take a screenshot");
-    assertThat(registerAccountPage.getWarningMessageWebElement().getText()).isEqualTo(UNSUCCESSFUL_REGISTRATION_MESSAGE);
+    assertThat(registerAccountPage.getWarningMessage()).isEqualTo(UNSUCCESSFUL_REGISTRATION_MESSAGE);
     LOG.info("Email already registered message!");
   }
 

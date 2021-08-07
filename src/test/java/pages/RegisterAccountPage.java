@@ -6,6 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegisterAccountPage extends BasePage{
 
@@ -35,6 +36,15 @@ public class RegisterAccountPage extends BasePage{
 
   @FindBy(xpath = "//*[@id=\"content\"]/form/div/div/input[1]")
   WebElement privacyPolicyCheckBox;
+
+  @FindBy( xpath = "//*[@id=\"content\"]/form/div/div/a" )
+  WebElement privacyPolicyLink;
+
+  @FindBy( xpath = "//button[@class=\"close\"]" )
+  WebElement privacyPolicyCloseButton;
+
+  @FindBy(xpath = "//*[@id=\"modal-agree\"]/div/div/div[2]")
+  WebElement privacyPolicyModalWindow;
 
   @FindBy( xpath = "//*[@id=\"content\"]/form/div/div/input[2]")
   WebElement countinueButton;
@@ -67,9 +77,35 @@ public class RegisterAccountPage extends BasePage{
     LOG.info("Click to continue button");
   }
 
-    public WebElement getWarningMessageWebElement() {
-      return WarningMessageEmailIsAlreadyIsRegistered;
-    }
+  public String getWarningMessage() {
+    return WarningMessageEmailIsAlreadyIsRegistered.getText();
+  }
+
+  public void clickToPrivacyPolicyCheckBox() {
+    privacyPolicyCheckBox.click();
+    wait.until(ExpectedConditions.elementToBeSelected(privacyPolicyCheckBox));
+    LOG.info("Click To Privacy Policy Checkbox");
+  }
+
+  public boolean getPrivacyPolicyState() {
+    LOG.info("Privacy Policy CheckBox: " + privacyPolicyCheckBox.getAttribute("checked").equals("true"));
+    return privacyPolicyCheckBox.getAttribute("checked").equals("true");
+  }
+
+  public void closePrivacyPolicyModalForm() {
+    privacyPolicyCloseButton.click();
+  }
+
+  public void openPrivacyPolicy() {
+    privacyPolicyLink.click();
+    wait.until(ExpectedConditions.visibilityOf(privacyPolicyCloseButton));
+    LOG.info("Privacy policy model window opened");
+  }
+
+  public String getPrivacyPolicyModalText() {
+    return privacyPolicyModalWindow.getText();
+  }
+
 }
 
 
