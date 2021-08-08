@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +24,18 @@ public class DesktopPage extends BasePage {
 
   @FindBy (className = "product-layout")
   WebElement productLayout;
+
+  @FindBy ( xpath = "//ul[@class=\"pagination\"]//li[@class=\"active\"]//span")
+  WebElement activePageNumber;
+
+  @FindBy( xpath = "//ul[@class=\"pagination\"]//a[text()=\">\"]" )
+  WebElement stepToNextPage;
+
+  @FindBy( xpath = "//ul[@class=\"pagination\"]//a[text()=\"<\"]" )
+  WebElement stepToPreviousPage;
+
+  @FindBy( xpath = "//*[@id=\"content\"]/div[5]/div[2]" )
+  WebElement showingPagesText;
 
   public DesktopPage(WebDriver driver) {
     super(driver, DesktopPage.class);
@@ -50,5 +63,20 @@ public class DesktopPage extends BasePage {
     }
     return resultList;
   }
+
+  public String getActivePageNumber() {
+    return activePageNumber.getText();
+  }
+
+  public void stepToNextPage() {
+    stepToNextPage.click();
+    wait.until(ExpectedConditions.visibilityOf(showingPagesText));
+  }
+
+  public void stepPreviousPage() {
+    stepToPreviousPage.click();
+
+  }
+
 }
 

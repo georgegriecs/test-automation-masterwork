@@ -20,7 +20,9 @@ TC02_UnsuccessfulRegistration.java
  TC02_UnsuccessfulRegistration
 pages/DesktopPage.java
  pages.DesktopPage
-TC05_PrivacyStatementTest.java
- TC05_PrivacyStatementTest
 TC06_DataListingTest.java
  TC06_DataListingTest
+TC05_PrivacyStatementTest.java
+ TC05_PrivacyStatementTest
+TC07_PaginationTest.java
+ TC07_PaginationTest

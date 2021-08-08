@@ -1,4 +1,8 @@
 import static org.assertj.core.api.Assertions.assertThat;
+
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 import pages.AccountLoginPage;
@@ -8,6 +12,9 @@ import pages.RegisterAccountPage;
 import java.util.Collections;
 import java.util.List;
 
+@Epic("Customer administration processes in YourStore web app")
+@Feature("Product data listing")
+@Story("Listing all data in order by price")
 public class TC06_DataListingTest extends BaseTest {
   private HomePage homepage = null;
   private AccountLoginPage accountLoginPage = null;
