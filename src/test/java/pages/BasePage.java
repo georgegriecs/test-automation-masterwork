@@ -2,6 +2,7 @@ package pages;
 
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,11 +14,13 @@ public class BasePage {
   protected final WebDriver driver;
   protected final WebDriverWait wait;
   protected final Logger LOG;
+  protected final Actions action;
 
   public BasePage( WebDriver driver, Class cls) {
     this.driver = driver;
     this.wait = new WebDriverWait( driver, 10 );
     this.LOG = LoggerFactory.getLogger(cls);
+    this.action = new Actions(driver);
     PageFactory.initElements(driver, this);
   }
 
