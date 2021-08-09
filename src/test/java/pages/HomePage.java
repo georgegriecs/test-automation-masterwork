@@ -54,7 +54,6 @@ public class HomePage extends BasePage {
   public void clickToAllDesktops() {
     menuShowAllDesktops.click();
   }
-  public void waitForAllDesktop() {}
 
   public void showAllDesktop() {
     waitForClickableDesktop();
@@ -62,7 +61,6 @@ public class HomePage extends BasePage {
     makeScreenshot();
     LOG.info("Take a screenshot");
     clickToAllDesktops();
-    waitForAllDesktop();
     makeScreenshot();
     LOG.info("Take a screenshot");
   }

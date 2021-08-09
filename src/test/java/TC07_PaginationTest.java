@@ -29,6 +29,7 @@ public class TC07_PaginationTest extends BaseTest {
     makeScreenshot();
     LOG.info("Taken a screenshot");
     homepage.showAllDesktop();
+    desktopPage.waitForAllProductVisibility();
     LOG.info("Show all desktop");
     LOG.info("Active page: " + desktopPage.getActivePageNumber());
     assertThat(desktopPage.getActivePageNumber()).isEqualTo("1");

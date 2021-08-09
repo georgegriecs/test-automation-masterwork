@@ -1,13 +1,15 @@
-BaseTest.java
- BaseTest
-pages/BasePage.java
- pages.BasePage
-pages/RegisterAccountPage.java
- pages.RegisterAccountPage
 pages/AccountLoginPage.java
  pages.AccountLoginPage
+BaseTest.java
+ BaseTest
+pages/AddressBookPage.java
+ pages.AddressBookPage
+pages/RegisterAccountPage.java
+ pages.RegisterAccountPage
 pages/LoginPage.java
  pages.LoginPage
+pages/BasePage.java
+ pages.BasePage
 TC03_LoginSuccessful.java
  TC03_LoginSuccessful
 TC04_LoginUnsuccessful.java
@@ -18,11 +20,13 @@ pages/HomePage.java
  pages.HomePage
 TC02_UnsuccessfulRegistration.java
  TC02_UnsuccessfulRegistration
-pages/DesktopPage.java
- pages.DesktopPage
 TC06_DataListingTest.java
  TC06_DataListingTest
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest
 TC05_PrivacyStatementTest.java
  TC05_PrivacyStatementTest
+pages/DesktopPage.java
+ pages.DesktopPage
 TC07_PaginationTest.java
  TC07_PaginationTest

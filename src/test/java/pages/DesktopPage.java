@@ -75,7 +75,10 @@ public class DesktopPage extends BasePage {
 
   public void stepPreviousPage() {
     stepToPreviousPage.click();
+  }
 
+  public void waitForAllProductVisibility(){
+    wait.until(ExpectedConditions.visibilityOfAllElements(pricesTax));
   }
 
 }

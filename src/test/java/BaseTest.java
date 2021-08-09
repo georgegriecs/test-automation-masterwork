@@ -26,16 +26,11 @@ public class BaseTest {
   protected final String REGISTRATED_PASSWORD = "test_psw";
   protected final String UNSUCCESSFUL_REGISTRATION_MESSAGE = "Warning: E-Mail Address is already registered!";
   protected final String WARNING_MESSAGE_NO_MATCH_EMAIL_PASSWORD = "Warning: No match for E-Mail Address and/or Password.";
-
-
+  
   @BeforeAll
   public static void setup() throws IOException {
-
     WebDriverManager.chromedriver().setup();
-
     ChromeOptions chromeOptions = new ChromeOptions();
-    //chromeOptions.addArguments(props.getProperty("chrome.arguments"));
-
     driver = new ChromeDriver(chromeOptions);
     driver.manage().window().maximize();
     driver.manage().deleteAllCookies();
