@@ -1,4 +1,5 @@
-import com.sun.javaws.jnl.ExtDownloadDesc;
+
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.*;
@@ -14,7 +15,8 @@ public class TC08_SimpleDataEntryTest  extends  BaseTest {
   private AddressBookEntriesPage addressBookEntriesPage = null;
   private AddressBookPage addressBookPage = null;
 
-  public TC08_SimpleDataEntryTest() {
+  @Test
+  public void SimpleDataEntryTest() {
 
     homepage = new HomePage(driver);
     accountLoginPage = new AccountLoginPage(driver);
@@ -37,8 +39,5 @@ public class TC08_SimpleDataEntryTest  extends  BaseTest {
     addressBookEntriesPage.getNewAddressButton().click();
     assertThat(ExpectedConditions.elementToBeClickable(addressBookPage.getCountinueButton()));
     LOG.info("Take a screenshot");
-
-
-
   }
 }

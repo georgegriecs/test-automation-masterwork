@@ -1,32 +1,34 @@
-pages/AccountLoginPage.java
- pages.AccountLoginPage
-BaseTest.java
- BaseTest
-pages/AddressBookPage.java
- pages.AddressBookPage
-pages/RegisterAccountPage.java
- pages.RegisterAccountPage
-pages/LoginPage.java
- pages.LoginPage
-pages/BasePage.java
- pages.BasePage
 TC03_LoginSuccessful.java
  TC03_LoginSuccessful
 TC04_LoginUnsuccessful.java
  TC04_LoginUnsuccessful
+TC02_UnsuccessfulRegistration.java
+ TC02_UnsuccessfulRegistration
+pages/DesktopPage.java
+ pages.DesktopPage
+TC06_DataListingTest.java
+ TC06_DataListingTest
+pages/LoginPage.java
+ pages.LoginPage
+TC07_PaginationTest.java
+ TC07_PaginationTest
+pages/BasePage.java
+ pages.BasePage
 TC01_SuccessfulRegistration.java
  TC01_SuccessfulRegistration
 pages/HomePage.java
  pages.HomePage
-TC02_UnsuccessfulRegistration.java
- TC02_UnsuccessfulRegistration
-TC06_DataListingTest.java
- TC06_DataListingTest
-TC08_SimpleDataEntryTest.java
- TC08_SimpleDataEntryTest
+pages/AccountLoginPage.java
+ pages.AccountLoginPage
+pages/RegisterAccountPage.java
+ pages.RegisterAccountPage
+pages/AddressBookPage.java
+ pages.AddressBookPage
+BaseTest.java
+ BaseTest
 TC05_PrivacyStatementTest.java
  TC05_PrivacyStatementTest
-pages/DesktopPage.java
- pages.DesktopPage
-TC07_PaginationTest.java
- TC07_PaginationTest
+pages/AddressBookEntriesPage.java
+ pages.AddressBookEntriesPage
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest

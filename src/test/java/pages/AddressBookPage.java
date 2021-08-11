@@ -36,8 +36,6 @@ public class AddressBookPage extends BasePage {
   @FindBy(id = "input-zone")
   WebElement ZoneSelect;
 
-
-
   public AddressBookPage( WebDriver driver) {
     super(driver, AddressBookPage.class);
   }
@@ -46,5 +44,5 @@ public class AddressBookPage extends BasePage {
     return countinueButton;
   }
 
-  
+
 }

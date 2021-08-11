@@ -7,7 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddressBookEntriesPage extends BasePage {
 
-  @FindBy (xpath = "//*[@id=\"content\"]/div/div[2]/a")
+  //@FindBy (xpath = "//*[@id=\"content\"]/div/div[2]/a")
+  @FindBy( xpath = "//*[@id=\"column-right\"]/div/a[5]")
   WebElement newAddressButton;
 
   public AddressBookEntriesPage( WebDriver driver) {
