@@ -4,12 +4,16 @@ TC04_LoginUnsuccessful.java
  TC04_LoginUnsuccessful
 TC02_UnsuccessfulRegistration.java
  TC02_UnsuccessfulRegistration
-pages/DesktopPage.java
- pages.DesktopPage
+pages/AddressBookEntriesPage.java
+ pages.AddressBookEntriesPage
 TC06_DataListingTest.java
  TC06_DataListingTest
+pages/AddAddressPage.java
+ pages.AddAddressPage
 pages/LoginPage.java
  pages.LoginPage
+pages/AccountLoginPage.java
+ pages.AccountLoginPage
 TC07_PaginationTest.java
  TC07_PaginationTest
 pages/BasePage.java
@@ -18,8 +22,10 @@ TC01_SuccessfulRegistration.java
  TC01_SuccessfulRegistration
 pages/HomePage.java
  pages.HomePage
-pages/AccountLoginPage.java
- pages.AccountLoginPage
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest
+pages/PersonalAccountPage.java
+ pages.PersonalAccountPage
 pages/RegisterAccountPage.java
  pages.RegisterAccountPage
 pages/AddressBookPage.java
@@ -28,7 +34,9 @@ BaseTest.java
  BaseTest
 TC05_PrivacyStatementTest.java
  TC05_PrivacyStatementTest
-pages/AddressBookEntriesPage.java
- pages.AddressBookEntriesPage
-TC08_SimpleDataEntryTest.java
- TC08_SimpleDataEntryTest
+pages/DesktopPage.java
+ pages.DesktopPage
+pages/LogoutPage.java
+ pages.LogoutPage
+TC09_RepetitivDataUpload.java
+ TC09_RepetitivDataUpload
