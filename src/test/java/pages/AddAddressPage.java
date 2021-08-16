@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.lang.ref.WeakReference;
@@ -54,7 +55,6 @@ public class AddAddressPage extends BasePage {
   public void  uploadBookData(
     String firstName, String lastName,  String company, String addressOne,
     String addressTwo, String city, String postcode, String country, String region) {
-
     this.firstName.sendKeys(firstName);
     this.lastName.sendKeys(lastName);
     this.company.sendKeys(company);
@@ -64,7 +64,9 @@ public class AddAddressPage extends BasePage {
     this.postcode.sendKeys(postcode);
     Select selectCountry = new Select(this.countrySelect);
     selectCountry.selectByVisibleText(country);
+
     Select selectZone = new Select(this.zoneSelect);
+    wait.until(ExpectedConditions.textToBePresentInElement(this.zoneSelect, region));
     selectZone.selectByVisibleText(region);
   }
 

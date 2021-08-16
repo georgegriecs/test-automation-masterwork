@@ -54,7 +54,6 @@ public class TC09_RepetitivDataUpload  extends  BaseTest {
     LOG.info("Take a screenshot");
     LOG.info("Data row count before upload: " + dataRowCount) ;
     addAddressPage.uploadBookData( firstName, lastName, company, address, "", city, postCode, country, region);
-    Thread.sleep(5000);
     makeScreenshot();
     LOG.info("Take a screenshot");
     addAddressPage.getSubmitButton().click();
@@ -65,6 +64,5 @@ public class TC09_RepetitivDataUpload  extends  BaseTest {
     addAddressPage.getLogoutMenu().click();
     wait.until(ExpectedConditions.visibilityOf(logoutPage.getContinueButton()));
     logoutPage.getContinueButton().click();
-
   }
 }
