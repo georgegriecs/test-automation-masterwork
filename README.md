@@ -25,12 +25,23 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 http://test-automation-shop2.greenfox.academy/ 
 <br />
 
-### Manuális teszteesetek:
+### Manuális tesztesetek:
 <br />
 https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?usp=sharing&ouid=100619899740904833217&rtpof=true&sd=true
 
-### A távoli repository klónozása a lokális
+### A távoli repository klónozása a lokális:
+<br />
+git clone git@github.com:georgegriecs/test-automation-masterwork.git
 
-### Tesztek futtatása
+### Tesztek futtatása:
+<br />
+cd .\test-automation-masterwork
+<br />
+.\gradlew clean test
 
-### Allure report generálása és az Allure server indítása
+### Allure report generálása és az Allure Server indítása:
+<br />
+.\gradlew allureReport
+<br />
+.\gradlew allureServe
+
