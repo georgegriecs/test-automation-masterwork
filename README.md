@@ -1,8 +1,8 @@
-# test-automation-masterwork
-Green Fox - Test-Automation Vizsgaremek
+
+# Green Fox - Test-Automation Vizsgaremek
 <br />
 
-Követelmények:
+### Követelmények:
 
 1. Regisztráció: min. 2 teszteset, 1 sikeres 1 sikertelen
 2. Bejelentkezés: min. 2 teszteset, 1 sikeres 1 sikertelen
