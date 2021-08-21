@@ -20,11 +20,17 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 11. Kijelentkezés: min. 1 teszteset, sikeres kilépés
 
 
-Tesztelt weboldal elérhetősége: 
+### Tesztelt weboldal elérhetősége: 
 <br />
 http://test-automation-shop2.greenfox.academy/ 
 <br />
 
-Manuális teszteesetek:
+### Manuális teszteesetek:
 <br />
 https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?usp=sharing&ouid=100619899740904833217&rtpof=true&sd=true
+
+### A távoli repository klónozása a lokális
+
+### Tesztek futtatása
+
+### Allure report generálása és az Allure server indítása
