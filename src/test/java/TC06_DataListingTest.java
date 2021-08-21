@@ -8,31 +8,31 @@ import org.openqa.selenium.WebElement;
 import java.util.Collections;
 import java.util.List;
 
-@Epic("Customer administration processes in YourStore web app")
-@Feature("Product data listing")
-@Story("Listing all data in order by price")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Termekek listazasa")
+@Story("Termekek ar szerint listazva")
 public class TC06_DataListingTest extends BaseTest {
 
   @Test
-  @DisplayName("")
+  @DisplayName("Termekek ar szerint csokkeno sorrendben listazva")
   public void dataListingTest() {
     homepage.open();
     makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("Kepernyokep keszites");
     homepage.showAllDesktop();
-    LOG.info("Show all desktop");
+    LOG.info("Mutass az osszes termeket");
     desktopPage.setSortByCategory("Price (Low > High)");
-    LOG.info("Sort by price");
+    LOG.info("Ar szerint rendezve");
     desktopPage.setShowProductQuantity("100");
-    LOG.info("Show all product");
+    LOG.info("Mutass az osszes termeket");
     List<WebElement> productList = desktopPage.getProductList();
-    LOG.info( "Product quantity: " + productList.size() );
+    LOG.info( "Termek mennyiseg: " + productList.size() );
     List<Float> originList = desktopPage.getFloatPriceList();
-    LOG.info("Get origin price list");
+    LOG.info("Vegyuk az eredeti termek listat");
     List<Float> sortedList = desktopPage.getFloatPriceList();
     Collections.sort(sortedList);
-    LOG.info("Get sorted price list");
+    LOG.info("Vegyuk az ar szerint rendezett termek listat");
     assertThat(originList).containsExactlyElementsOf(sortedList);
-    LOG.info("Does the order of the two arrays matches?");
+    LOG.info("Egyezzik a ket lista?");
   }
 }

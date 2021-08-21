@@ -6,15 +6,15 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("")
-@Feature("")
-@Story("")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Cimlista kezelese")
+@Story("Cimlistahoz elso elemet modositjuk")
 public class TC10_DataEditingTest extends BaseTest {
 
   final String MODIFIER_TEXT = "plus_text";
 
   @Test
-  @DisplayName("delete teszt")
+  @DisplayName("A cimlista elso elemeben a firstname mezohoz hozzaadunk a MODIFIER_TEXT konstansban levo stringet")
   public void dataEditing() throws InterruptedException {
     String modifiedFieldText = "";
 

@@ -6,9 +6,9 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("")
-@Feature("")
-@Story("")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Cimlista kezelese")
+@Story("Cimlistahoz hozzadunk egy csv fileban levo cimlistat")
 public class TC09_RepetitivDataUpload  extends  BaseTest {
 
   @ParameterizedTest

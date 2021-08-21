@@ -5,24 +5,19 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("Customer administration processes in YourStore web app")
-@Feature("Customer Login")
-@Story("Successful login")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Felhasznaloi belepes")
+@Story("Sikeres belepes")
 public class TC03_LoginSuccessful extends BaseTest {
 
   @Test
-  @DisplayName("")
+  @DisplayName("Sikeres belepes szabalyos parameterekkel")
   public void loginSuccessful() {
     homepage.open();
-    makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("A folap betoltodott");
     homepage.openAccountLoginPage();
-    LOG.info("Load account login page");
-    makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("A login page betoltodott");
     accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true );
-    makeScreenshot();
-    LOG.info("Take a screenshot");
     assertThat( driver.getTitle()).isEqualTo("My Account");
   }
 }

@@ -5,30 +5,27 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("Customer administration processes in YourStore web app")
-@Feature("Customer registration")
-@Story("Unsuccessful registration")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Felhasznaloi regisztracio")
+@Story("Sikertelen regisztracio")
 public class TC02_UnsuccessfulRegistration  extends BaseTest {
 
   @Test
-  @DisplayName("")
+  @DisplayName("Sikertelen regisztracio, mar regisztralt felhasznalo adataival")
   public void successfulRegistration() {
     homepage.open();
-    makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("A folap betoltodott");
     homepage.openAccountLoginPage();
-    LOG.info("Load account login page");
-    makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("A login page betoltodott");
     accountLoginPage.clickToNewCustomerButton();
-    LOG.info("Click to New Customer Continue button");
+    LOG.info("Az uj felhasznalo folytatas gombra kattintunk");
     makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("Kepernyokep keszites");
     registerAccountPage.registerNewCustomer("test_fname", "test_lname", REGISTRATED_EMAIL, "+361234566", REGISTRATED_PASSWORD);
     makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("Kepernyokep keszites");
     assertThat(registerAccountPage.getWarningMessage()).isEqualTo(UNSUCCESSFUL_REGISTRATION_MESSAGE);
-    LOG.info("Email already registered message!");
+    LOG.info("Email already registered uezenet!");
   }
 
 

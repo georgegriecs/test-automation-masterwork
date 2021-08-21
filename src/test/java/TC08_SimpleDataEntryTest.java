@@ -6,43 +6,40 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("")
-@Feature("")
-@Story("")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Cimlista kezelese")
+@Story("Cimlistahoz hozzadunk egy tetelt")
 public class TC08_SimpleDataEntryTest  extends  BaseTest {
 
   @Test
-  @DisplayName("")
+  @DisplayName("Egy uj cimadatokat adunk a meglevo listahoz")
   public void SimpleDataEntryTest() throws InterruptedException {
     homepage.open();
-    makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("A folap betoltodott");
     homepage.openAccountLoginPage();
-    LOG.info("Load account login page");
-    makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("A login page betoltodott");
     accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true );
     makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("Kepernyokep keszites");
     assertThat( driver.getTitle()).isEqualTo("My Account");
     personalAccountPage.getMenuAddressBook().click();
     assertThat(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));
     int dataRowCount = addAddressPage.getBookAddressItemCount();
     makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("Kepernyokep keszites");
     addressBookEntriesPage.getNewAddressButton().click();
     assertThat(ExpectedConditions.elementToBeClickable(addAddressPage.getSubmitButton()));
     makeScreenshot();
-    LOG.info("Take a screenshot");
-    LOG.info("Data row count before upload: " + dataRowCount) ;
+    LOG.info("Kepernyokep keszites");
+    LOG.info("Cimlista szamossaga feltoltes elott: " + dataRowCount) ;
     addAddressPage.uploadBookData(
             "Peter", "Fekete", "Kerekgyar", "Loter 12.",
             "", "Karakoszorcsog", "1212", "Uganda", "Apac");
     addAddressPage.getSubmitButton().click();
     makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("Kepernyokep keszites");
     assertThat(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));
-    LOG.info("Data row count after upload: " + addAddressPage.getBookAddressItemCount()) ;
+    LOG.info("Cimlista szamossaga feltoltes utan: " + addAddressPage.getBookAddressItemCount()) ;
     assertThat(addAddressPage.getBookAddressItemCount()).isEqualTo(dataRowCount + 1);
 
   }

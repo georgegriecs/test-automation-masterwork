@@ -5,39 +5,36 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("Customer administration processes in YourStore web app")
-@Feature("Customer registration")
-@Story("Open privacy statement and set checkbox")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Felhasznaloi regisztracio")
+@Story("Adatvedelmi iranyelvek jelolonegyzet es nyilatkozat kezelese")
 public class TC05_PrivacyStatementTest extends BaseTest {
 
   @Test
-  @DisplayName("")
-  public void privacyStatementTest() throws InterruptedException {
+  @DisplayName("Az adatvedelmi nyilatkozat megnyitasa es a jelolonegyzet kipipalasa")
+  public void privacyStatementTest() {
     navigateToRegisterAccountPage();
     makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("Kepernyokep keszites");
     registerAccountPage.openPrivacyPolicy();
     makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("Kepernyokep keszites");
     assertThat(registerAccountPage.getPrivacyPolicyModalText()).isEqualTo("Privacy Policy");
     registerAccountPage.closePrivacyPolicyModalForm();
     makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("Kepernyokep keszites");
     registerAccountPage.clickToPrivacyPolicyCheckBox();
     makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("Kepernyokep keszites");
     assertThat( registerAccountPage.getPrivacyPolicyState() ).isTrue();
   }
 
   private void navigateToRegisterAccountPage() {
     homepage.open();
-    makeScreenshot();
-    LOG.info("Taken a screenshot");
+    LOG.info("A folap betoltodott");
     homepage.openAccountLoginPage();
-    LOG.info("Load account login page");
-    makeScreenshot();
-    LOG.info("Take a screenshot");
+    LOG.info("A login page betoltodott");
     accountLoginPage.clickToNewCustomerButton();
-    LOG.info("Click to New Customer Continue button");
+    LOG.info("Az uj felhasznalo folytatas gombra kattintunk");
   }
 }

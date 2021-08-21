@@ -70,11 +70,11 @@ public class RegisterAccountPage extends BasePage{
     passwordConfirmField.sendKeys(password);
     LOG.info("Confirm password: " + password);
     makeScreenshot();
-    LOG.info("Take screenshot");
+    LOG.info("Kepernyokep keszites");
     privacyPolicyCheckBox.click();
-    LOG.info("Set to privacy policy checkbox");
+    LOG.info("Az adatvedelmi iranyelvek jelolonegyzetre kattintunk");
     countinueButton.click();
-    LOG.info("Click to continue button");
+    LOG.info("A folytatas gombra kattintva");
   }
 
   public String getWarningMessage() {
@@ -84,7 +84,7 @@ public class RegisterAccountPage extends BasePage{
   public void clickToPrivacyPolicyCheckBox() {
     privacyPolicyCheckBox.click();
     wait.until(ExpectedConditions.elementToBeSelected(privacyPolicyCheckBox));
-    LOG.info("Click To Privacy Policy Checkbox");
+    LOG.info("Varakozas az adatvedelmi irányelvek jelolonegyzet kattinthatosagara");
   }
 
   public boolean getPrivacyPolicyState() {
