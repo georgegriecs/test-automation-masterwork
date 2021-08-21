@@ -30,18 +30,16 @@ http://test-automation-shop2.greenfox.academy/
 https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?usp=sharing&ouid=100619899740904833217&rtpof=true&sd=true
 
 ### A távoli repository klónozása a lokális:
-
 git clone git@github.com:georgegriecs/test-automation-masterwork.git
 
 ### Tesztek futtatása:
-
 cd test-automation-masterwork
 <br />
 .\gradlew clean test
 
-### Allure report generálása és az Allure Server indítása:
-
+### Allure report generálása:
 .\gradlew allureReport
 <br />
+### Allure Server indítása:
 .\gradlew allureServe
 
