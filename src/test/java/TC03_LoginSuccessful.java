@@ -12,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Feature("Customer Login")
 @Story("Successful login")
 public class TC03_LoginSuccessful extends BaseTest {
+
   private HomePage homepage = null;
   private AccountLoginPage accountLoginPage = null;
   private RegisterAccountPage registerAccountPage = null;

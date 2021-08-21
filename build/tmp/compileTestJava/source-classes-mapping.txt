@@ -1,5 +1,5 @@
-TC03_LoginSuccessful.java
- TC03_LoginSuccessful
+pages/AddAddressPage.java
+ pages.AddAddressPage
 TC04_LoginUnsuccessful.java
  TC04_LoginUnsuccessful
 TC02_UnsuccessfulRegistration.java
@@ -34,9 +34,11 @@ BaseTest.java
  BaseTest
 TC05_PrivacyStatementTest.java
  TC05_PrivacyStatementTest
-TC08_SimpleDataEntryTest.java
- TC08_SimpleDataEntryTest
-pages/AddAddressPage.java
- pages.AddAddressPage
 TC09_RepetitivDataUpload.java
  TC09_RepetitivDataUpload
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest
+TC03_LoginSuccessful.java
+ TC03_LoginSuccessful
+TC13_LogoutTest.java
+ TC13_LogoutTest
