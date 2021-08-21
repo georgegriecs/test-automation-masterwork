@@ -15,8 +15,7 @@ public class TC06_DataListingTest extends BaseTest {
 
   @Test
   @DisplayName("")
-  public void dataListingTest() throws InterruptedException {
-
+  public void dataListingTest() {
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");

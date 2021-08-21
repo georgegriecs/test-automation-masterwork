@@ -1,29 +1,27 @@
-pages/BasePage.java
- pages.BasePage
-pages/LogoutPage.java
- pages.LogoutPage
-pages/DesktopPage.java
- pages.DesktopPage
-pages/AccountLoginPage.java
- pages.AccountLoginPage
-pages/HomePage.java
- pages.HomePage
-pages/AddressBookPage.java
- pages.AddressBookPage
-pages/AddAddressPage.java
- pages.AddAddressPage
-pages/LoginPage.java
- pages.LoginPage
-pages/RegisterAccountPage.java
- pages.RegisterAccountPage
-pages/PersonalAccountPage.java
- pages.PersonalAccountPage
-pages/AddressBookEntriesPage.java
- pages.AddressBookEntriesPage
-TC03_LoginSuccessful.java
- TC03_LoginSuccessful
 TC04_LoginUnsuccessful.java
  TC04_LoginUnsuccessful
+pages/AddressBookEntriesPage.java
+ pages.AddressBookEntriesPage
+pages/AddAddressPage.java
+ pages.AddAddressPage
+TC10_DataEditingTest.java
+ TC10_DataEditingTest
+pages/LoginPage.java
+ pages.LoginPage
+TC07_PaginationTest.java
+ TC07_PaginationTest
+pages/BasePage.java
+ pages.BasePage
+TC13_LogoutTest.java
+ TC13_LogoutTest
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest
+TC05_PrivacyStatementTest.java
+ TC05_PrivacyStatementTest
+pages/DesktopPage.java
+ pages.DesktopPage
+TC03_LoginSuccessful.java
+ TC03_LoginSuccessful
 TC02_UnsuccessfulRegistration.java
  TC02_UnsuccessfulRegistration
 TC11_DataDeletingTest.java
@@ -32,19 +30,23 @@ TC06_DataListingTest.java
  TC06_DataListingTest
 pages/EditAddressPage.java
  pages.EditAddressPage
-TC05_PrivacyStatementTest.java
- TC05_PrivacyStatementTest
+pages/AccountLoginPage.java
+ pages.AccountLoginPage
 TC09_RepetitivDataUpload.java
  TC09_RepetitivDataUpload
-TC07_PaginationTest.java
- TC07_PaginationTest
 TC01_SuccessfulRegistration.java
  TC01_SuccessfulRegistration
-TC13_LogoutTest.java
- TC13_LogoutTest
-TC08_SimpleDataEntryTest.java
- TC08_SimpleDataEntryTest
+pages/HomePage.java
+ pages.HomePage
+pages/PersonalAccountPage.java
+ pages.PersonalAccountPage
+pages/RegisterAccountPage.java
+ pages.RegisterAccountPage
+pages/AddressBookPage.java
+ pages.AddressBookPage
 BaseTest.java
  BaseTest
-TC10_DataEditingTest.java
- TC10_DataEditingTest
+pages/LogoutPage.java
+ pages.LogoutPage
+TC12_DataDownloadToFileTest.java
+ TC12_DataDownloadToFileTest

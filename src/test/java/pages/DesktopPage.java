@@ -25,6 +25,9 @@ public class DesktopPage extends BasePage {
   @FindBy (className = "product-layout")
   WebElement productLayout;
 
+  @FindBy ( xpath = "//div[@class=\"caption\"]/h4")
+  List<WebElement> productNames;
+
   @FindBy ( xpath = "//ul[@class=\"pagination\"]//li[@class=\"active\"]//span")
   WebElement activePageNumber;
 
@@ -60,6 +63,24 @@ public class DesktopPage extends BasePage {
     for (WebElement price : pricesTax) {
       Float priceFloat = Float.parseFloat(price.getText().substring(9).replace(",",""));
       resultList.add(priceFloat);
+    }
+    return resultList;
+  }
+
+  public List<String> getProductNames() {
+    List<String> resultList = new ArrayList<>();
+    for (WebElement product : productNames) {
+      resultList.add(product.getText());
+    }
+    return resultList;
+  }
+
+  public List<String> getDataLines() {
+    List<String> resultList = new ArrayList<>();
+    List<Float> prices = getFloatPriceList();
+    List<String> names = getProductNames();
+    for (int i = 0; i < prices.size(); i++) {
+      resultList.add( names.get(i) + ";" + prices.get(i));
     }
     return resultList;
   }
