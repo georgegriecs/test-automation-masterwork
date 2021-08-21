@@ -12,21 +12,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Feature("Customer Login")
 @Story("Unsuccessful login")
 public class TC04_LoginUnsuccessful extends BaseTest {
-  private HomePage homepage = null;
-  private AccountLoginPage accountLoginPage = null;
-  private RegisterAccountPage registerAccountPage = null;
 
   @Test
   public void loginSuccessful() {
-
-    homepage = new HomePage(driver);
-    accountLoginPage = new AccountLoginPage(driver);
-    registerAccountPage = new RegisterAccountPage(driver);
-
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.clickToMyAccountLink();
+    homepage.openAccountLoginPage();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");

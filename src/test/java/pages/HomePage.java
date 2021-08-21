@@ -36,17 +36,24 @@ public class HomePage extends BasePage {
 
   public void open() {
     driver.get(baseUrl);
-    LOG.info("Open homepage!");
+    LOG.info("A weboldal megnyitása");
     assertThat(driver.getTitle()).isEqualTo("Your Store");
-    LOG.info("Your Store downloaded !");
+    makeScreenshot();
+    LOG.info("Képernyőkép készítés");
+  }
+
+  public void openAccountLoginPage() {
+    myAccountFromFooter.click();
+    assertThat(driver.getTitle()).isEqualTo("Account Login");
+    makeScreenshot();
+    LOG.info("Képernyőkép készítés");
   }
 
   public boolean isLoaded() {
     return isLoaded(myAccountFromFooter);
   }
-  public void clickToMyAccountLink() {
-    myAccountFromFooter.click();
-  }
+
+
   public void waitForClickableDesktop() {
     wait.until(ExpectedConditions.elementToBeClickable(menuDesktops));
   }

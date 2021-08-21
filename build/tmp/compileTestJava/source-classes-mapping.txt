@@ -1,44 +1,50 @@
-pages/AddAddressPage.java
- pages.AddAddressPage
-TC04_LoginUnsuccessful.java
- TC04_LoginUnsuccessful
-TC02_UnsuccessfulRegistration.java
- TC02_UnsuccessfulRegistration
-pages/AddressBookEntriesPage.java
- pages.AddressBookEntriesPage
-TC06_DataListingTest.java
- TC06_DataListingTest
-pages/LogoutPage.java
- pages.LogoutPage
-pages/LoginPage.java
- pages.LoginPage
-pages/AccountLoginPage.java
- pages.AccountLoginPage
-TC07_PaginationTest.java
- TC07_PaginationTest
 pages/BasePage.java
  pages.BasePage
-TC01_SuccessfulRegistration.java
- TC01_SuccessfulRegistration
-pages/HomePage.java
- pages.HomePage
+pages/LogoutPage.java
+ pages.LogoutPage
 pages/DesktopPage.java
  pages.DesktopPage
-pages/PersonalAccountPage.java
- pages.PersonalAccountPage
-pages/RegisterAccountPage.java
- pages.RegisterAccountPage
+pages/AccountLoginPage.java
+ pages.AccountLoginPage
+pages/HomePage.java
+ pages.HomePage
 pages/AddressBookPage.java
  pages.AddressBookPage
+pages/AddAddressPage.java
+ pages.AddAddressPage
+pages/LoginPage.java
+ pages.LoginPage
+pages/RegisterAccountPage.java
+ pages.RegisterAccountPage
+pages/PersonalAccountPage.java
+ pages.PersonalAccountPage
+pages/AddressBookEntriesPage.java
+ pages.AddressBookEntriesPage
 BaseTest.java
  BaseTest
-TC05_PrivacyStatementTest.java
- TC05_PrivacyStatementTest
-TC09_RepetitivDataUpload.java
- TC09_RepetitivDataUpload
-TC08_SimpleDataEntryTest.java
- TC08_SimpleDataEntryTest
+pages/EditAddressPage.java
+ pages.EditAddressPage
 TC03_LoginSuccessful.java
  TC03_LoginSuccessful
+TC04_LoginUnsuccessful.java
+ TC04_LoginUnsuccessful
+TC01_SuccessfulRegistration.java
+ TC01_SuccessfulRegistration
+TC02_UnsuccessfulRegistration.java
+ TC02_UnsuccessfulRegistration
 TC13_LogoutTest.java
  TC13_LogoutTest
+TC11_DataDeletingTest.java
+ TC11_DataDeletingTest
+TC06_DataListingTest.java
+ TC06_DataListingTest
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest
+TC10_DataEditingTest.java
+ TC10_DataEditingTest
+TC09_RepetitivDataUpload.java
+ TC09_RepetitivDataUpload
+TC05_PrivacyStatementTest.java
+ TC05_PrivacyStatementTest
+TC07_PaginationTest.java
+ TC07_PaginationTest

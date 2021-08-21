@@ -13,21 +13,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Story("Successful login")
 public class TC03_LoginSuccessful extends BaseTest {
 
-  private HomePage homepage = null;
-  private AccountLoginPage accountLoginPage = null;
-  private RegisterAccountPage registerAccountPage = null;
-
   @Test
   public void loginSuccessful() {
-
-    homepage = new HomePage(driver);
-    accountLoginPage = new AccountLoginPage(driver);
-    registerAccountPage = new RegisterAccountPage(driver);
 
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.clickToMyAccountLink();
+    homepage.openAccountLoginPage();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");

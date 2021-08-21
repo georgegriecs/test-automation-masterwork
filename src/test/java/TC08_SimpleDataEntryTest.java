@@ -7,30 +7,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TC08_SimpleDataEntryTest  extends  BaseTest {
 
-  private HomePage homepage = null;
-  private AccountLoginPage accountLoginPage = null;
-  private RegisterAccountPage registerAccountPage = null;
-  private DesktopPage desktopPage = null;
-  private AddressBookEntriesPage addressBookEntriesPage = null;
-  private AddressBookPage addressBookPage = null;
-  private PersonalAccountPage personalAccountPage = null;
-  private AddAddressPage addAddressPage = null;
-
   @Test
   public void SimpleDataEntryTest() throws InterruptedException {
-
-    homepage = new HomePage(driver);
-    accountLoginPage = new AccountLoginPage(driver);
-    registerAccountPage = new RegisterAccountPage(driver);
-    addressBookPage = new AddressBookPage(driver);
-    addressBookEntriesPage  = new AddressBookEntriesPage(driver);
-    personalAccountPage = new PersonalAccountPage(driver);
-    addAddressPage = new AddAddressPage(driver);
-
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.clickToMyAccountLink();
+    homepage.openAccountLoginPage();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");

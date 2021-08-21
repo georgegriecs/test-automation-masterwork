@@ -13,17 +13,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Story("Navigate to between next and previous page ")
 
 public class TC07_PaginationTest extends BaseTest {
-  private HomePage homepage = null;
-  private AccountLoginPage accountLoginPage = null;
-  private RegisterAccountPage registerAccountPage = null;
-  private DesktopPage desktopPage = null;
 
   @Test
   public void paginationTest (){
-    homepage = new HomePage(driver);
-    accountLoginPage = new AccountLoginPage(driver);
-    registerAccountPage = new RegisterAccountPage(driver);
-    desktopPage = new DesktopPage(driver);
 
     homepage.open();
     makeScreenshot();

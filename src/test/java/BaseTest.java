@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pages.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +27,20 @@ public class BaseTest {
   protected final String REGISTRATED_PASSWORD = "test_psw";
   protected final String UNSUCCESSFUL_REGISTRATION_MESSAGE = "Warning: E-Mail Address is already registered!";
   protected final String WARNING_MESSAGE_NO_MATCH_EMAIL_PASSWORD = "Warning: No match for E-Mail Address and/or Password.";
-  
+
+  AccountLoginPage accountLoginPage = new AccountLoginPage(driver);
+  AddAddressPage addAddressPage = new AddAddressPage(driver);
+  AddressBookEntriesPage addressBookEntriesPage = new AddressBookEntriesPage(driver);
+  AddressBookPage addressBookPage = new AddressBookPage(driver);
+  DesktopPage desktopPage = new DesktopPage(driver);
+  EditAddressPage editAddressPage = new EditAddressPage(driver);
+  HomePage homepage = new HomePage(driver);
+  LoginPage loginPage = new LoginPage(driver);
+  LogoutPage logoutPage = new LogoutPage(driver);
+  PersonalAccountPage personalAccountPage = new PersonalAccountPage(driver);
+  RegisterAccountPage registerAccountPage = new RegisterAccountPage(driver);
+
+
   @BeforeAll
   public static void setup() throws IOException {
     WebDriverManager.chromedriver().setup();

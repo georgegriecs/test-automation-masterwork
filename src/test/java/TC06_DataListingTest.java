@@ -16,17 +16,9 @@ import java.util.List;
 @Feature("Product data listing")
 @Story("Listing all data in order by price")
 public class TC06_DataListingTest extends BaseTest {
-  private HomePage homepage = null;
-  private AccountLoginPage accountLoginPage = null;
-  private RegisterAccountPage registerAccountPage = null;
-  private DesktopPage desktopPage = null;
 
   @Test
   public void dataListingTest() throws InterruptedException {
-    homepage = new HomePage(driver);
-    accountLoginPage = new AccountLoginPage(driver);
-    registerAccountPage = new RegisterAccountPage(driver);
-    desktopPage = new DesktopPage(driver);
 
     homepage.open();
     makeScreenshot();

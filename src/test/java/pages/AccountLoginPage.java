@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import sun.rmi.runtime.Log;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class AccountLoginPage  extends BasePage {
 
@@ -40,16 +41,20 @@ public class AccountLoginPage  extends BasePage {
   }
 
   public void loginReturningCustomer( String email, String password ) {
-
     emailField.sendKeys(email);
     LOG.info("email: " + email);
     passwordField.sendKeys(password);
     LOG.info("password: " + password);
     makeScreenshot();
+    LOG.info("Képernyőkép készítés");
     loginButton.click();
+    assertThat( driver.getTitle()).isEqualTo("My Account");
+    makeScreenshot();
+    LOG.info("Képernyőkép készítés");
   }
 
   public WebElement getWarningMessageNoMatchEmailOrPassword() {
     return warningMessageNoMatch;
   }
+
 }

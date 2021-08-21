@@ -12,17 +12,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Story("Open privacy statement and set checkbox")
 public class TC05_PrivacyStatementTest extends BaseTest {
 
-  private HomePage homepage = null;
-  private AccountLoginPage accountLoginPage = null;
-  private RegisterAccountPage registerAccountPage = null;
-
   @Test
   public void privacyStatementTest() throws InterruptedException {
-
-    homepage = new HomePage(driver);
-    accountLoginPage = new AccountLoginPage(driver);
-    registerAccountPage = new RegisterAccountPage(driver);
-
     navigateToRegisterAccountPage();
     makeScreenshot();
     LOG.info("Taken a screenshot");
@@ -43,7 +34,7 @@ public class TC05_PrivacyStatementTest extends BaseTest {
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
-    homepage.clickToMyAccountLink();
+    homepage.openAccountLoginPage();
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");
