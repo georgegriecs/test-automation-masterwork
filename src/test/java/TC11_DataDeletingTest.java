@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
@@ -18,14 +19,14 @@ public class TC11_DataDeletingTest  extends BaseTest {
   final String SUCCESSFUL_MESSAGE = "Your address has been successfully deleted";
 
   @Test
-  @DisplayName("")
+  @Description("A cemjegyzek teteleinek torlese, az utolso tetel torlesenek megkiserlese")
   public void deleteItemsFromAddressBook() throws InterruptedException {
 
     homepage.open();
     LOG.info("A homepage betoltodott");
     homepage.openAccountLoginPage();
     LOG.info("A login page betoltodott");
-    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD);
+    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true);
     LOG.info("A My Account page betoltodott");
     personalAccountPage.getMenuAddressBook().click();
     wait.until(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));

@@ -22,7 +22,7 @@ public class TC10_DataEditingTest extends BaseTest {
     LOG.info("A homepage betoltodott");
     homepage.openAccountLoginPage();
     LOG.info("A login page betoltodott");
-    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD);
+    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true);
     LOG.info("A My Account page betoltodott");
     personalAccountPage.getMenuAddressBook().click();
     wait.until(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));

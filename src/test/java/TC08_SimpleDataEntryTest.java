@@ -21,7 +21,7 @@ public class TC08_SimpleDataEntryTest  extends  BaseTest {
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");
-    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD);
+    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true );
     makeScreenshot();
     LOG.info("Take a screenshot");
     assertThat( driver.getTitle()).isEqualTo("My Account");

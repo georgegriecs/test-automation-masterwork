@@ -16,27 +16,27 @@ public class TC09_RepetitivDataUpload  extends  BaseTest {
   public void repetitivDataUploadTest(String firstName, String lastName, String company, String address, String city, String postCode, String country, String region) throws InterruptedException {
 
     homepage.open();
-    LOG.info("A weboldal főoldala megnyitódott!");
+    LOG.info("A weboldal fooldala megnyitodott!");
     homepage.openAccountLoginPage();
-    LOG.info("A login page betöltődött");
-    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD);
+    LOG.info("A login page betoltodott");
+    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true);
     assertThat( driver.getTitle()).isEqualTo("My Account");
     personalAccountPage.getMenuAddressBook().click();
     assertThat(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));
     makeScreenshot();
-    LOG.info("Képernyőkép készítés");
+    LOG.info("Kepernyokep keszites");
     int dataRowCount = addAddressPage.getBookAddressItemCount();
-    LOG.info("Címjegyzék számossága feltöltés előtt: " + dataRowCount);
+    LOG.info("Cimjegyzek szamossaga feltoltes elott: " + dataRowCount);
     addressBookEntriesPage.getNewAddressButton().click();
     assertThat(ExpectedConditions.elementToBeClickable(addAddressPage.getSubmitButton()));
     makeScreenshot();
-    LOG.info("Képernyőkép készítés");
+    LOG.info("Kepernyokep keszites");
     addAddressPage.uploadBookData( firstName, lastName, company, address, "", city, postCode, country, region);
     makeScreenshot();
-    LOG.info("Képernyőkép készítés");
+    LOG.info("Kepernyokep keszites");
     addAddressPage.getSubmitButton().click();
     wait.until(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));
-    LOG.info("Címjegyzék számossága feltöltés után: " + addAddressPage.getBookAddressItemCount());
+    LOG.info("Cimjegyzek szamossaga feltoltes utan: " + addAddressPage.getBookAddressItemCount());
     assertThat(addAddressPage.getBookAddressItemCount()).isEqualTo(dataRowCount + 1);
     addAddressPage.getLogoutMenu().click();
     wait.until(ExpectedConditions.visibilityOf(logoutPage.getContinueButton()));

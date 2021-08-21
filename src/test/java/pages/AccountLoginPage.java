@@ -40,17 +40,19 @@ public class AccountLoginPage  extends BasePage {
     newCustomerButton.click();
   }
 
-  public void loginReturningCustomer( String email, String password ) {
+  public void loginReturningCustomer( String email, String password, boolean login_success ) {
     emailField.sendKeys(email);
     LOG.info("email: " + email);
     passwordField.sendKeys(password);
     LOG.info("password: " + password);
     makeScreenshot();
-    LOG.info("Képernyőkép készítés");
+    LOG.info("Kepernyokep keszites");
     loginButton.click();
-    assertThat( driver.getTitle()).isEqualTo("My Account");
+    if ( login_success ) {
+      assertThat(driver.getTitle()).isEqualTo("My Account");
+    }
     makeScreenshot();
-    LOG.info("Képernyőkép készítés");
+    LOG.info("Kepernyokep keszites");
   }
 
   public WebElement getWarningMessageNoMatchEmailOrPassword() {

@@ -12,7 +12,7 @@ public class TC04_LoginUnsuccessful extends BaseTest {
 
   @Test
   @DisplayName("")
-  public void loginSuccessful() {
+  public void loginUnsuccessful() {
     homepage.open();
     makeScreenshot();
     LOG.info("Taken a screenshot");
@@ -20,9 +20,7 @@ public class TC04_LoginUnsuccessful extends BaseTest {
     LOG.info("Load account login page");
     makeScreenshot();
     LOG.info("Take a screenshot");
-    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD + "_");
-    makeScreenshot();
-    LOG.info("Take a screenshot");
+    accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD + "_", false);
     assertThat( accountLoginPage.getWarningMessageNoMatchEmailOrPassword().getText()).isEqualTo(WARNING_MESSAGE_NO_MATCH_EMAIL_PASSWORD);
   }
 
