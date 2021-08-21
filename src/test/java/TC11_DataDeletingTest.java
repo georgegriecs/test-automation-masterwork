@@ -1,16 +1,14 @@
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.*;
-import sun.rmi.runtime.Log;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.comparable;
 
+@Epic("A Your Store web applikacio felhasznalo adminisztracio")
+@Feature("Cimjegyzek adminisztracio")
+@Story("Egy cim torlese")
 public class TC11_DataDeletingTest  extends BaseTest {
 
   private int dataRowCountBefore;
@@ -20,9 +18,7 @@ public class TC11_DataDeletingTest  extends BaseTest {
   final String SUCCESSFUL_MESSAGE = "Your address has been successfully deleted";
 
   @Test
-  @Epic("A Your Store web applikacio felhasznalo adminisztracio")
-  @Feature("Cimjegyzek adminisztracio")
-  @Story("Egy cim torlese")
+  @DisplayName("")
   public void deleteItemsFromAddressBook() throws InterruptedException {
 
     homepage.open();
@@ -45,7 +41,7 @@ public class TC11_DataDeletingTest  extends BaseTest {
       addressBookEntriesPage.deleteFirstAddress();
       wait.until(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));
       makeScreenshot();
-      LOG.info("Képernyőkép készítés");
+      LOG.info("Kepernyokep keszites");
       dataRowCountAfter = addAddressPage.getBookAddressItemCount();
       LOG.info("Cimjegyzek szamossaga torles utan: " + addAddressPage.getBookAddressItemCount());
       if (dataRowCountBefore == 1) {

@@ -1,18 +1,17 @@
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.*;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.comparable;
-
-
+@Epic("")
+@Feature("")
+@Story("")
 public class TC13_LogoutTest extends BaseTest {
 
-  public TC13_LogoutTest() {
-  }
   @Test
+  @DisplayName("")
   public void logoutTest() throws InterruptedException {
     homepage.open();
     makeScreenshot();

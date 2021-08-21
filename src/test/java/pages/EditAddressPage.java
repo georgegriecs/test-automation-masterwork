@@ -22,9 +22,24 @@ public class EditAddressPage extends BasePage {
   public void saveEditedItem() {
     continueButton.click();
   }
-//
 
+  public WebElement getContinueButton(){
+    return continueButton;
+  }
 
+  public void updateFirstName( String text ) {
+    LOG.info("FirstName mezo update: " + text );
+    firstName.clear();
+    firstName.sendKeys( text );
+    makeScreenshot();
+    LOG.info("Kepernyokep keszites");
+    continueButton.click();
+  }
 
+  public String getFirstNameText() {
+    String value = firstName.getAttribute("value");
+    LOG.info("FirstName mezo tartalma: " + value);
+    return value;
+  }
 
 }

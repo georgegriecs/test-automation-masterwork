@@ -1,6 +1,7 @@
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,10 +18,10 @@ public class TC01_SuccessfulRegistration  extends BaseTest {
   private final String SUCCESSFUL_REGISTRATION_MESSAGE = "Your Account Has Been Created!";
 
   @Test
+  @DisplayName("")
   public void successfulRegistration() {
     homepage.open();
-    makeScreenshot();
-    LOG.info("Taken a screenshot");
+
     homepage.openAccountLoginPage();
     LOG.info("Load account login page");
     makeScreenshot();
@@ -39,5 +40,4 @@ public class TC01_SuccessfulRegistration  extends BaseTest {
   public String generateEmail() {
     return "test_" + ((int)( Math.random() * 100000000 )) + "@test.hu";
   }
-
 }

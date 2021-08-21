@@ -20,31 +20,31 @@ pages/PersonalAccountPage.java
  pages.PersonalAccountPage
 pages/AddressBookEntriesPage.java
  pages.AddressBookEntriesPage
-BaseTest.java
- BaseTest
-pages/EditAddressPage.java
- pages.EditAddressPage
 TC03_LoginSuccessful.java
  TC03_LoginSuccessful
 TC04_LoginUnsuccessful.java
  TC04_LoginUnsuccessful
-TC01_SuccessfulRegistration.java
- TC01_SuccessfulRegistration
 TC02_UnsuccessfulRegistration.java
  TC02_UnsuccessfulRegistration
-TC13_LogoutTest.java
- TC13_LogoutTest
 TC11_DataDeletingTest.java
  TC11_DataDeletingTest
 TC06_DataListingTest.java
  TC06_DataListingTest
-TC08_SimpleDataEntryTest.java
- TC08_SimpleDataEntryTest
-TC10_DataEditingTest.java
- TC10_DataEditingTest
-TC09_RepetitivDataUpload.java
- TC09_RepetitivDataUpload
+pages/EditAddressPage.java
+ pages.EditAddressPage
 TC05_PrivacyStatementTest.java
  TC05_PrivacyStatementTest
+TC09_RepetitivDataUpload.java
+ TC09_RepetitivDataUpload
 TC07_PaginationTest.java
  TC07_PaginationTest
+TC01_SuccessfulRegistration.java
+ TC01_SuccessfulRegistration
+TC13_LogoutTest.java
+ TC13_LogoutTest
+TC08_SimpleDataEntryTest.java
+ TC08_SimpleDataEntryTest
+BaseTest.java
+ BaseTest
+TC10_DataEditingTest.java
+ TC10_DataEditingTest

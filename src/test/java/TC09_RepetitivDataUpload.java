@@ -1,12 +1,14 @@
-import org.junit.jupiter.api.Test;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.*;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.comparable;
 
+@Epic("")
+@Feature("")
+@Story("")
 public class TC09_RepetitivDataUpload  extends  BaseTest {
 
   @ParameterizedTest
@@ -40,6 +42,4 @@ public class TC09_RepetitivDataUpload  extends  BaseTest {
     wait.until(ExpectedConditions.visibilityOf(logoutPage.getContinueButton()));
     logoutPage.getContinueButton().click();
   }
-
-
 }

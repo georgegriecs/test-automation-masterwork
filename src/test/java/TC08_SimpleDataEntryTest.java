@@ -1,13 +1,18 @@
-
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import pages.*;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Epic("")
+@Feature("")
+@Story("")
 public class TC08_SimpleDataEntryTest  extends  BaseTest {
 
   @Test
+  @DisplayName("")
   public void SimpleDataEntryTest() throws InterruptedException {
     homepage.open();
     makeScreenshot();

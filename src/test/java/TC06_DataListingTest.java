@@ -1,14 +1,10 @@
 import static org.assertj.core.api.Assertions.assertThat;
-
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
-import pages.AccountLoginPage;
-import pages.DesktopPage;
-import pages.HomePage;
-import pages.RegisterAccountPage;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,6 +14,7 @@ import java.util.List;
 public class TC06_DataListingTest extends BaseTest {
 
   @Test
+  @DisplayName("")
   public void dataListingTest() throws InterruptedException {
 
     homepage.open();
