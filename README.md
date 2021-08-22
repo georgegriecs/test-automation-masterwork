@@ -38,14 +38,15 @@ git clone https://github.com/georgegriecs/test-automation-masterwork.git
 
 cd test-automation-masterwork
 
-`.\gradlew clean test`
-
+```
+gradlew clean test
+```
 ### Allure report generálása:
-
-`.\gradlew allureReport`
-<br />
+```
+gradlew allureReport
+```
 
 ### Allure Server indítása:
-
-`.\gradlew allureServe`
-
+```
+gradlew allureServe
+```
