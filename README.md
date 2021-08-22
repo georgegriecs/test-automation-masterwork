@@ -33,11 +33,11 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 ```
 git clone https://github.com/georgegriecs/test-automation-masterwork.git
 ```
-
-### Tesztek futtatása:
-
+### Belépés a project könyvtárba
+```
 cd test-automation-masterwork
-
+```
+### Tesztek futtatása:
 ```
 gradlew clean test
 ```
@@ -45,7 +45,6 @@ gradlew clean test
 ```
 gradlew allureReport
 ```
-
 ### Allure Server indítása:
 ```
 gradlew allureServe
