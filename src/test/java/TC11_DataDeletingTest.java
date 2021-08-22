@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("A Your Store web applikacio felhasznalo adminisztracio")
-@Feature("Cimjegyzek adminisztracio")
-@Story("Egy cim torlese")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Cimlista kezelese")
+@Story("A cimek torlese")
 public class TC11_DataDeletingTest  extends BaseTest {
 
   private int dataRowCountBefore;

@@ -5,7 +5,7 @@ import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-@Epic("Your Store online webaruhaz felhasznaloinak kezelese")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
 @Feature("Kilepes a webaruhazbol")
 @Story("Belepes majd kilepes a webaruhazba")
 public class TC13_LogoutTest extends BaseTest {
@@ -18,8 +18,6 @@ public class TC13_LogoutTest extends BaseTest {
     homepage.openAccountLoginPage();
     LOG.info("A login page betoltodott");
     accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true);
-    makeScreenshot();
-    LOG.info("Kepernyokep keszites");
     addAddressPage.getLogoutMenu().click();
     makeScreenshot();
     LOG.info("Kepernyokep keszites");

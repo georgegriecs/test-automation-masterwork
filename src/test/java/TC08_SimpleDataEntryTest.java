@@ -19,8 +19,6 @@ public class TC08_SimpleDataEntryTest  extends  BaseTest {
     homepage.openAccountLoginPage();
     LOG.info("A login page betoltodott");
     accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true );
-    makeScreenshot();
-    LOG.info("Kepernyokep keszites");
     assertThat( driver.getTitle()).isEqualTo("My Account");
     personalAccountPage.getMenuAddressBook().click();
     assertThat(ExpectedConditions.elementToBeClickable(addressBookEntriesPage.getNewAddressButton()));
