@@ -23,11 +23,11 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 ### Tesztelt weboldal elérhetősége: 
 
 http://test-automation-shop2.greenfox.academy/ 
-<br />
+[Opencart](http://test-automation-shop2.greenfox.academy/)
 
 ### Manuális tesztesetek:
 
-https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?usp=sharing&ouid=100619899740904833217&rtpof=true&sd=true
+[Google Sheets](https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?usp=sharing&ouid=100619899740904833217&rtpof=true&sd=true)
 
 ### A távoli repository klónozása a lokális:
 `git clone https://github.com/georgegriecs/test-automation-masterwork.git`
@@ -35,7 +35,7 @@ https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?us
 ### Tesztek futtatása:
 
 cd test-automation-masterwork
-<br />
+
 `.\gradlew clean test`
 
 ### Allure report generálása:
