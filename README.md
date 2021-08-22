@@ -22,7 +22,6 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 
 ### Tesztelt weboldal elérhetősége: 
 
-http://test-automation-shop2.greenfox.academy/ 
 [Opencart](http://test-automation-shop2.greenfox.academy/)
 
 ### Manuális tesztesetek:
