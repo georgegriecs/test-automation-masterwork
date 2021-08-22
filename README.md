@@ -29,7 +29,10 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 [Google Sheets](https://docs.google.com/spreadsheets/d/1Lg9EH8voRupx4iNbNSBBjEG75eUIgl3t/edit?usp=sharing&ouid=100619899740904833217&rtpof=true&sd=true)
 
 ### A távoli repository klónozása a lokális:
-`git clone https://github.com/georgegriecs/test-automation-masterwork.git clipboardy-chrome-extension`
+
+```
+git clone https://github.com/georgegriecs/test-automation-masterwork.git clipboardy-chrome-extension
+```
 
 ### Tesztek futtatása:
 
