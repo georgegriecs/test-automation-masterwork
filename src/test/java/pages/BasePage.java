@@ -1,5 +1,4 @@
 package pages;
-
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

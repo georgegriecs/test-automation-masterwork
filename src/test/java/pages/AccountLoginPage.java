@@ -1,14 +1,13 @@
 package pages;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AccountLoginPage  extends BasePage {
+  public AccountLoginPage(WebDriver driver ) {
+    super(driver, AccountLoginPage.class  );
+  }
 
   @FindBy( xpath = "//a[text()=\"Continue\"]"  )
   WebElement newCustomerButton;
@@ -27,10 +26,6 @@ public class AccountLoginPage  extends BasePage {
 
   @FindBy( xpath = "//*[@id=\"account-login\"]/div[1]"  )
   WebElement warningMessageNoMatch;
-
-  public AccountLoginPage(WebDriver driver ) {
-    super(driver, AccountLoginPage.class  );
-  }
 
   public boolean isLoaded() {
     return isLoaded(loginButton);

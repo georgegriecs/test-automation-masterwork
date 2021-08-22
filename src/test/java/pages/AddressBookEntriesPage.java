@@ -4,6 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AddressBookEntriesPage extends BasePage {
+  public AddressBookEntriesPage( WebDriver driver) {
+    super(driver, AddressBookPage.class);
+  }
 
   @FindBy( xpath = "//*[@id=\"content\"]/div/div[2]/a")
   WebElement newAddressButton;
@@ -16,10 +19,6 @@ public class AddressBookEntriesPage extends BasePage {
 
   @FindBy ( xpath = "//*[@id=\"content\"]/div[1]/table/tbody/tr[1]/td[2]/a[1]")
   WebElement firstItemEditButton;
-
-  public AddressBookEntriesPage( WebDriver driver) {
-    super(driver, AddressBookPage.class);
-  }
 
   public WebElement getNewAddressButton() {
     return newAddressButton;

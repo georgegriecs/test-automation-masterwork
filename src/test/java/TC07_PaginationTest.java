@@ -14,7 +14,6 @@ public class TC07_PaginationTest extends BaseTest {
   @Test
   @Description("Elore navigalunk a lapokon")
   public void paginationTest () {
-
     homepage.open();
     makeScreenshot();
     LOG.info("Kepernyokep keszites");

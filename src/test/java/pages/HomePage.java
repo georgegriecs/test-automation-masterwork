@@ -1,13 +1,14 @@
 package pages;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import static org.assertj.core.api.Assertions.*;
 
 public class HomePage extends BasePage {
+  public HomePage(WebDriver driver) {
+    super(driver, HomePage.class);
+  }
 
   final String baseUrl = "http://test-automation-shop2.greenfox.academy/";
 
@@ -29,11 +30,6 @@ public class HomePage extends BasePage {
   @FindBy( xpath = "//*[@id=\"content\"]/div[5]/div[2]" )
   WebElement pageCounterText;
 
-
-  public HomePage(WebDriver driver) {
-    super(driver, HomePage.class);
-  }
-
   public void open() {
     driver.get(baseUrl);
     LOG.info("A weboldal megnyitása");
@@ -52,8 +48,6 @@ public class HomePage extends BasePage {
   public boolean isLoaded() {
     return isLoaded(myAccountFromFooter);
   }
-
-
   public void waitForClickableDesktop() {
     wait.until(ExpectedConditions.elementToBeClickable(menuDesktops));
   }

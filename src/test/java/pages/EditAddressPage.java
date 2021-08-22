@@ -1,5 +1,4 @@
 package pages;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,7 +37,7 @@ public class EditAddressPage extends BasePage {
 
   public String getFirstNameText() {
     String value = firstName.getAttribute("value");
-    LOG.info("FirstName mezo tartalma: " + value);
+    LOG.info("First Name mezo tartalma: " + value);
     return value;
   }
 

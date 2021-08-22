@@ -17,8 +17,7 @@ public class TC06_DataListingTest extends BaseTest {
   @DisplayName("Termekek ar szerint csokkeno sorrendben listazva")
   public void dataListingTest() {
     homepage.open();
-    makeScreenshot();
-    LOG.info("Kepernyokep keszites");
+    LOG.info("A folap betoltodott");
     homepage.showAllDesktop();
     LOG.info("Mutass az osszes termeket");
     desktopPage.setSortByCategory("Price (Low > High)");

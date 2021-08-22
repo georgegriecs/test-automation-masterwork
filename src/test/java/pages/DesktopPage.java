@@ -1,7 +1,5 @@
 package pages;
 
-
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DesktopPage extends BasePage {
+  public DesktopPage(WebDriver driver) {
+    super(driver, DesktopPage.class);
+  }
 
   @FindBy(id = "input-sort")
   WebElement sortSelectComponent;
@@ -39,10 +40,6 @@ public class DesktopPage extends BasePage {
 
   @FindBy( xpath = "//*[@id=\"content\"]/div[5]/div[2]" )
   WebElement showingPagesText;
-
-  public DesktopPage(WebDriver driver) {
-    super(driver, DesktopPage.class);
-  }
 
   public void setSortByCategory( String category ) {
     Select selectedCategory = new Select(sortSelectComponent);

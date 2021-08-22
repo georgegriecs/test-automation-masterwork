@@ -25,6 +25,6 @@ public class TC02_UnsuccessfulRegistration  extends BaseTest {
     makeScreenshot();
     LOG.info("Kepernyokep keszites");
     assertThat(registerAccountPage.getWarningMessage()).isEqualTo(UNSUCCESSFUL_REGISTRATION_MESSAGE);
-    LOG.info("Email already registered uezenet!");
+    LOG.info("Email already registered uzenet!");
   }
 }

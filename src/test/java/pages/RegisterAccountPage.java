@@ -1,14 +1,13 @@
 package pages;
-
-import io.qameta.allure.Attachment;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegisterAccountPage extends BasePage{
+  public RegisterAccountPage(WebDriver driver) {
+    super(driver, RegisterAccountPage.class);
+  }
 
   @FindBy(id = "input-firstname")
   WebElement firstNameField;
@@ -51,10 +50,6 @@ public class RegisterAccountPage extends BasePage{
 
   @FindBy ( xpath = "//*[@id=\"account-register\"]/div[1]")
   WebElement WarningMessageEmailIsAlreadyIsRegistered;
-
-  public RegisterAccountPage(WebDriver driver) {
-    super(driver, RegisterAccountPage.class);
-  }
 
   public void registerNewCustomer( String firstName, String lastName, String email, String telephone, String password) {
     firstNameField.sendKeys(firstName);

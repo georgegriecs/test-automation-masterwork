@@ -11,9 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.*;
-
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 
@@ -39,7 +37,6 @@ public class BaseTest {
   LogoutPage logoutPage = new LogoutPage(driver);
   PersonalAccountPage personalAccountPage = new PersonalAccountPage(driver);
   RegisterAccountPage registerAccountPage = new RegisterAccountPage(driver);
-
 
   @BeforeAll
   public static void setup() throws IOException {

@@ -1,13 +1,10 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
-import java.lang.ref.WeakReference;
 import java.util.List;
 
 public class AddAddressPage extends BasePage {
@@ -51,7 +48,6 @@ public class AddAddressPage extends BasePage {
   @FindBy( xpath = "//*[@id=\"column-right\"]/div/a[13]")
   WebElement logoutMenu;
 
-
   public void  uploadBookData(
     String firstName, String lastName,  String company, String addressOne,
     String addressTwo, String city, String postcode, String country, String region) {
@@ -76,10 +72,6 @@ public class AddAddressPage extends BasePage {
 
   public int getBookAddressItemCount() {
     return addressItems.size();
-  }
-
-  public WebElement getAddressTwo() {
-    return addressTwo;
   }
 
   public WebElement getLogoutMenu() {

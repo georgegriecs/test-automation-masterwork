@@ -14,9 +14,8 @@ public class TC09_RepetitivDataUpload  extends  BaseTest {
   @ParameterizedTest
   @CsvFileSource(resources = "/AddressList.csv")
   public void repetitivDataUploadTest(String firstName, String lastName, String company, String address, String city, String postCode, String country, String region) throws InterruptedException {
-
     homepage.open();
-    LOG.info("A weboldal fooldala megnyitodott!");
+    LOG.info("A folap betoltodott");
     homepage.openAccountLoginPage();
     LOG.info("A login page betoltodott");
     accountLoginPage.loginReturningCustomer( REGISTRATED_EMAIL, REGISTRATED_PASSWORD, true);

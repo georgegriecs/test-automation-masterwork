@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Epic("Your Store online webaruhaz termekek kezelese")
-@Feature("A webaruhaz adatainak listazasa es fileba mentese")
+@Epic("Felhasznalok kezelese a Your Store webaruhazban")
+@Feature("Termekek listazasa")
 @Story("Az osszes desktop termekek nevenek es aranak fileba mentese")
 public class TC12_DataDownloadToFileTest extends BaseTest  {
 
