@@ -31,7 +31,7 @@ adatok megváltoztatása, rendelés darabszám növelés) min 1. Teszteset
 ### A távoli repository klónozása a lokális:
 
 ```
-git clone https://github.com/georgegriecs/test-automation-masterwork.git clipboardy-chrome-extension
+git clone https://github.com/georgegriecs/test-automation-masterwork.git
 ```
 
 ### Tesztek futtatása:
